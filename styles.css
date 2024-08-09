@@ -317,6 +317,11 @@ button i {
         font-size: 10px;
     }
 
+    #palette {
+        grid-template-columns: repeat(8, 1fr);
+        /* Set 8 items per row */
+    }
+
     header h1 {
         font-size: 18px;
     }
@@ -385,5 +390,10 @@ button i {
         width: 35px;
         height: 35px;
         font-size: 8px;
+    }
+
+    #palette {
+        grid-template-columns: repeat(8, 1fr);
+        /* Set 8 items per row */
     }
 }
