@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let palette = [];
 
-        for (let i = 0; i < 10; i++) { // Generate 24 colors
-            let factor = i / 9; // Use 23 to spread out colors evenly
+        for (let i = 0; i < 12; i++) { // Generate 24 colors
+            let factor = i / 11; // Use 23 to spread out colors evenly
             let lightR = Math.round(r + (255 - r) * (1 - factor));
             let lightG = Math.round(g + (255 - g) * (1 - factor));
             let lightB = Math.round(b + (255 - b) * (1 - factor));
