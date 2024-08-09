@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- For Font Awesome Icons -->
+</head>
+
+<body>
+    <header>
+        <h1>Color Mixer</h1>
+        <p>Mix colors and view your palette</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left-section">
+                <div class="color-picker-group">
+                    <label for="color1">Select your first color</label>
+                    <input type="color" id="color1" name="color1">
+                    <button class="eye-dropper" id="eyeDropper1">
+                        <i class="fas fa-eye-dropper"></i>
+                    </button>
+                </div>
+                <div class="color-picker-group">
+                    <label for="color2">Select your second color</label>
+                    <input type="color" id="color2" name="color2">
+                    <button class="eye-dropper" id="eyeDropper2">
+                        <i class="fas fa-eye-dropper"></i>
+                    </button>
+                </div>
+                <button id="mixColors">Mix Colors</button>
+            </div>
+            <div class="middle-section">
+                <div id="result-container">
+                    <div id="result-text">
+                        Result Color: <span id="colorName">Unknown Color</span>
+                    </div>
+                    <div id="result"></div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div id="palette">
+                    <!-- Example color palette items, these will be generated dynamically -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Color Mixer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
